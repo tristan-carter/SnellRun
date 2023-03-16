@@ -2,6 +2,7 @@ import React from 'react'
 
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home () {
   return (
@@ -13,14 +14,17 @@ export default function Home () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col justify-center items-center min-h-screen">
-        <div className="relative h-screen w-screen">
+        <div className="absolute h-screen w-screen">
           <Image
               src="/Images/LandingBG.jpg"
               alt="Background Image"
               fill
-              className="-z-10 object-contain"
+              className="-z-10 object-cover"
           />
         </div>
+        <Link passHref className="h-[17%] aspect-[36/12]" href="/play">
+          <button className="h-full w-full leading-tight py-2 font-semibold text-themeBlue bg-themeOrange rounded-3xl text-center sm:text-xl md:text-5xl lg:text-8xl">Play</button>
+        </Link>
       </main>
     </>
   )
