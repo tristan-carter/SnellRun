@@ -28,7 +28,7 @@ export default function Home () {
               className="-z-10 object-contain"
           />
         </div>
-        <p className="justify-self-start z-[2] pb-2 font-bold text-white text-center text-6xl">SnellRun</p>
+        <p className="md:hidden justify-self-start z-[2] pb-2 font-bold text-white text-center text-6xl">SnellRun</p>
         <Link passHref className="z-[2] w-60 mb-32 md:mb-0 md:mt-36 lg:w-72 p-2 md:p-3 lg:p-5 font-semibold text-[#860C0C] md:text-themeBlue hover:bg-[#FF9800] bg-themeOrange rounded-2xl md:rounded-3xl text-center text-6xl md:text-7xl lg:text-8xl" href="/play">
           <button>Play</button>
         </Link>
