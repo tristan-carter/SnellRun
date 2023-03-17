@@ -28,7 +28,7 @@ export default function Home () {
               className="-z-10 object-contain"
           />
         </div>
-        <Link passHref className="z-[2] w-60 mb-32 md:w-60 lg:w-80 p-2 md:p-3 lg:p-5 font-semibold text-[#860C0C] md:text-themeBlue hover:bg-[#FF9800] bg-themeOrange rounded-2xl md:rounded-3xl text-center text-7xl md:text-8xl lg:text-9xl" href="/play">
+        <Link passHref className="z-[2] w-60 mb-32 md:w-60 lg:w-80 p-2 md:p-3 lg:p-5 font-semibold text-[#860C0C] md:text-themeBlue hover:bg-[#FF9800] bg-themeOrange rounded-2xl md:rounded-3xl text-center text-7xl lg:text-9xl" href="/play">
           <button>Play</button>
         </Link>
       </main>
