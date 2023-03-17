@@ -1,11 +1,8 @@
-import { useState } from 'react';
-
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home () {
-  const [isHovered, setIsHovered] = useState(false);
   return (
     <>
       <Head>
@@ -23,7 +20,7 @@ export default function Home () {
               className="-z-10 object-cover"
           />
         </div>
-        <Link passHref className="h-[17%] aspect-[36/12] py-2 font-semibold text-themeBlue hover:bg-[#FF9800] bg-themeOrange rounded-3xl text-center sm:h-1/4 sm:text-3xl md:text-6xl lg:text-8xl" href="/play">
+        <Link passHref className="md:w-50  lg:w-80 aspect-[36/12] p-2 font-semibold text-themeBlue hover:bg-[#FF9800] bg-themeOrange rounded-3xl text-center sm:text-3xl md:text-6xl lg:text-8xl" href="/play">
           <button>Play</button>
         </Link>
       </main>
