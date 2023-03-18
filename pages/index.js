@@ -11,8 +11,8 @@ export default function Home () {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col justify-between md:justify-center items-center h-screen bg-[#DF5644] md:bg-white">
-        <div className="absolute h-screen w-screen z-[1] hidden md:block ">
+      <main className="flex flex-col justify-between md:justify-center items-center h-full bg-[#DF5644] md:bg-white">
+        <div className="absolute h-full w-screen z-[1] hidden md:block ">
           <Image
               src="/Images/LandingBG.jpg"
               alt="Background Image"
@@ -20,7 +20,7 @@ export default function Home () {
               className="-z-10 object-contain"
           />
         </div>
-        <div className="absolute h-screen w-screen z-[1] md:hidden">
+        <div className="absolute h-full w-screen z-[1] md:hidden">
           <Image
               src="/Images/MobileLandingBG.jpg"
               alt="Background Image"

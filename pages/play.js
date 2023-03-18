@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import navbar from '../components/navbar'
+
 export default function Home () {
   return (
     <>
@@ -11,7 +13,8 @@ export default function Home () {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col justify-center items-center min-h-screen max-h-screen bg-themeOrange">
+      <main className="flex flex-col justify-center items-center h-full bg-themeOrange">
+        <navbar></navbar>
       </main>
     </>
   )
