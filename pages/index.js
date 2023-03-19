@@ -9,7 +9,7 @@ export default function Home () {
         <title>SnellRun</title>
         <meta name="description" content="2d game escaping Mr Snelling because you are late. Credits: Tristan C, Alexa G, Tom G, Adam L and to everyone who gave suggestions." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Images/HeaderIcon.png" />
       </Head>
       <main className="flex flex-col justify-between md:justify-center items-center h-full bg-[#DF5644] md:bg-white">
         <div className="absolute h-full w-screen z-[1] hidden md:block ">
