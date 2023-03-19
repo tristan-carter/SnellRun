@@ -5,25 +5,23 @@ import React from "react";
 export default function NavBar() {
     return(
         <header className="top-0 p-4 justify-between items-center flex h-[11%] md:h-[13%] fixed w-full z-50">
-            <li className="relative h-[100%] aspect-square">
+            <div className="relative h-full aspect-square">
                 <Image
                     src="/Images/OrangeHeaderIcon.png"
                     alt="Clifton Logo"
                     fill
                 />
-            </li>
+            </div>
 
-            <li className="md:self-center" ><p className="text-themeBlue text-6xl md:text-8xl font-semibold">SnellRun</p></li>
+            <p className="md:self-center text-themeBlue text-6xl md:text-8xl font-semibold">SnellRun</p>
 
-            <li className="relative h-[100%] aspect-square">
-                <Link passHref href="/">
-                    <Image
-                        src="/Images/NavExitButton.png"
-                        alt="Back Button"
-                        fill
-                    />
-                </Link>
-            </li>
+            <Link className="relative h-full aspect-square" passHref href="/">
+                <Image
+                    src="/Images/NavExitButton.png"
+                    alt="Back Button"
+                    fill
+                />
+            </Link>
         </header>
     )
 }

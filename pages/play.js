@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
+
+import React from 'react'
+import { Canvas } from '@react-three/fiber'
 
 import NavBar from '/components/navbar'
 
@@ -15,6 +17,13 @@ export default function Home () {
       </Head>
       <main className="flex flex-col justify-center items-center h-full bg-themeOrange">
         <NavBar/>
+        <Canvas>
+          <pointLight position={[10, 10, 10]} />
+          <mesh>
+            <sphereGeometry />
+            <meshStandardMaterial color="hotpink" />
+          </mesh>
+        </Canvas>
       </main>
     </>
   )
