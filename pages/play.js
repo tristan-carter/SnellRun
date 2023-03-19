@@ -6,7 +6,7 @@ import { Canvas } from '@react-three/fiber'
 import { useLoader } from "@react-three/fiber";
 import * as THREE from "three";
 
-import NavBar from '/components/NavBar'
+import NavBar from '/components/navbar'
 
 function Background({ image }) {
   const texture = useLoader(THREE.TextureLoader, image);
