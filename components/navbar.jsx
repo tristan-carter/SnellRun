@@ -10,6 +10,7 @@ export default function NavBar() {
                     src="/Images/OrangeHeaderIcon.png"
                     alt="Clifton Logo"
                     fill
+                    className="relative"
                 />
             </div>
 
@@ -19,6 +20,7 @@ export default function NavBar() {
                     src="/Images/NavExitButton.png"
                     alt="Back Button"
                     fill
+                    className="relative"
                 />
             </Link>
         </div>
