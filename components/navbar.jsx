@@ -10,17 +10,15 @@ export default function NavBar() {
                     src="/Images/OrangeHeaderIcon.png"
                     alt="Clifton Logo"
                     fill
-                    style={{objectFit: 'contain'}}
                 />
             </div>
 
             <p className="md:self-center text-themeBlue text-6xl md:text-8xl font-semibold">SnellRun</p>
-            <Link className="relative h-full aspect-square" passHref href="/">
+            <Link className="relative h-full aspect-square" href="/">
                 <Image
                     src="/Images/NavExitButton.png"
                     alt="Back Button"
                     fill
-                    style={{objectFit: 'contain'}}
                 />
             </Link>
         </div>
