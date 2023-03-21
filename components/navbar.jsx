@@ -4,21 +4,23 @@ import React from "react";
 
 export default function NavBar() {
     return(
-        <div className="p-4 justify-between items-center flex flex-row h-[11%] md:h-[13%] relative w-full z-50">
-            <div className="relative h-full aspect-square">
+        <div className="p-4 justify-between items-center flex flex-row h-[4.5rem] relative w-full z-50">
+            <div className="relative">
                 <Image
-                    src="/Images/OrangeHeaderIcon.png"
+                    src="/Images/HeaderIcon.png"
                     alt="Clifton Logo"
-                    fill
+                    width={64}
+                    height={64}
                 />
             </div>
 
-            <p className="md:self-center text-themeBlue text-6xl md:text-8xl font-semibold">SnellRun</p>
-            <Link className="relative h-full aspect-square" href="/">
+            <p className="md:self-center text-themeOrange text-6xl md:text-7xl font-semibold">SnellRun</p>
+            <Link className="relative" href="/">
                 <Image
                     src="/Images/NavExitButton.png"
                     alt="Back Button"
-                    fill
+                    width={64}
+                    height={64}
                 />
             </Link>
         </div>

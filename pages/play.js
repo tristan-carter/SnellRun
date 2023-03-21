@@ -29,7 +29,7 @@ export default function Home () {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/Images/HeaderIcon.png" />
       </Head>
-      <main className="flex flex-col justify-center items-center h-full bg-themeOrange">
+      <main className="flex flex-col justify-center items-center h-full bg-themeBlue">
         <NavBar/>
         <Canvas className='bg-[#41BFA7]'>
           <Background image="/Images/HallwayBG.jpg" />
