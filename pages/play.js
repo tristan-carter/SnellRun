@@ -2,11 +2,11 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import React from 'react'
-import { Canvas } from '@react-three/fiber'
-import { useLoader } from "@react-three/fiber";
+import { Canvas, useLoader } from '@react-three/fiber'
 import * as THREE from "three";
 
 import NavBar from '/components/navbar'
+import { TomSprite } from '/components/Sprites';
 
 function Background({ image }) {
   const texture = useLoader(THREE.TextureLoader, image);
@@ -33,6 +33,7 @@ export default function Home () {
         <NavBar/>
         <Canvas className='bg-[#41BFA7]'>
           <Background image="/Images/HallwayBG.jpg" />
+          <TomSprite/>
         </Canvas>
       </main>
     </>
