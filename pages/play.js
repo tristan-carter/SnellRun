@@ -7,6 +7,7 @@ import * as THREE from "three";
 
 import NavBar from '/components/navbar'
 import { TomSprite } from '/components/Sprites';
+import { SnellSprite } from '/components/Sprites';
 
 function Background({ image }) {
   const texture = useLoader(THREE.TextureLoader, image);
@@ -34,6 +35,7 @@ export default function Home () {
         <Canvas className='bg-[#41BFA7]'>
           <Background image="/Images/HallwayBG.jpg" />
           <TomSprite/>
+          <SnellSprite/>
         </Canvas>
       </main>
     </>

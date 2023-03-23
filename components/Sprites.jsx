@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { Canvas, useLoader, useFrame } from '@react-three/fiber'
 import * as THREE from "three";
 
-const useSpritesheetAnimation = (texture, frameTime) => {
+function useSpritesheetAnimation (texture, frameTime) {
     const t = useRef(0)
     const currentFrame = useRef(0)
   
@@ -32,11 +32,27 @@ export function TomSprite() {
 
     texture.repeat.set(1/4, 1)
 
-    useSpritesheetAnimation(texture, 170)
+    useSpritesheetAnimation(texture, 180)
     
     return (
-        <sprite scale={[2.2, 2.2]} position={[-0.6, -0.5, 1]} >
+        <sprite scale={[1.9, 1.9]} position={[-0.8, -0.6, 1]} >
             <spriteMaterial transparent map={texture} />
         </sprite>
     )
+}
+
+export function SnellSprite() {
+  const texture = useLoader(THREE.TextureLoader, '/Images/SnellSpriteSet.png')
+  texture.minFilter = THREE.NearestFilter
+  texture.magFilter = THREE.NearestFilter
+
+  texture.repeat.set(1/4, 1)
+
+  useSpritesheetAnimation(texture, 200)
+  
+  return (
+      <sprite scale={[2.1, 2.1]} position={[-1.5, -0.5, 1]} >
+          <spriteMaterial transparent map={texture} />
+      </sprite>
+  )
 }
