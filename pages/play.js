@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import React from 'react'
-import { Canvas, useLoader } from '@react-three/fiber'
+import { Canvas, useLoader, KeyboardControls } from '@react-three/fiber'
 import * as THREE from "three";
 
 import NavBar from '/components/navbar'
@@ -21,7 +21,7 @@ function Background({ image }) {
   );
 }
 
-export default function Home () {
+export default function Play () {
   return (
     <>
       <Head>
@@ -32,11 +32,11 @@ export default function Home () {
       </Head>
       <main className="flex flex-col justify-center items-center h-full bg-themeBlue">
         <NavBar/>
-        <Canvas className='bg-[#41BFA7]'>
-          <Background image="/Images/HallwayBG.jpg" />
-          <TomSprite/>
-          <SnellSprite/>
-        </Canvas>
+          <Canvas className='bg-[#41BFA7]'>
+            <Background image="/Images/HallwayBG.jpg" />
+            <TomSprite/>
+            <SnellSprite/>
+          </Canvas>
       </main>
     </>
   )
