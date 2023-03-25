@@ -49,7 +49,7 @@ export function TomSprite() {
 
   texture.repeat.set(1/4, 1)
 
-  useSpritesheetAnimation(texture, 180)
+  useSpritesheetAnimation(texture, 195)
 
   async function jumpPressed(){
     if (spriteRef.current) {
@@ -74,7 +74,6 @@ export function TomSprite() {
 }
 
 export function SnellSprite() {
-  const spriteRef = useRef();
   const [jumping, setJumping] = useState(false);
 
   const springs = useSpring({
@@ -89,24 +88,20 @@ export function SnellSprite() {
   texture.repeat.set(1/4, 1)
 
   async function jumpPressed(){
-    if (spriteRef) {
-      if (spriteRef.current.position.y == -0.5){
-        await delay(100)
-        setJumping(true)
-        await delay(500)
-        setJumping(false)
-      }
-    }
+    await delay(100)
+    setJumping(true)
+    await delay(500)
+    setJumping(false)
   }
 
   window.addEventListener("startJumping", jumpPressed);
 
 
 
-  useSpritesheetAnimation(texture, 200)
+  useSpritesheetAnimation(texture, 215)
   
   return (
-      <animated.sprite scale={[2.1, 2.1]} position={springs.position} ref={spriteRef} >
+      <animated.sprite scale={[2.1, 2.1]} position={springs.position} >
           <spriteMaterial transparent map={texture} />
       </animated.sprite>
   )
