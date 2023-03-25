@@ -6,3 +6,9 @@ import { Canvas, useLoader, KeyboardControls } from '@react-three/fiber'
 import * as THREE from "three";
 
 import NavBar from '/components/navbar'
+
+export default function Retry () {
+    return (
+        <></>
+    );
+}
