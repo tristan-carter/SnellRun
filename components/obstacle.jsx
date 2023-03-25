@@ -3,7 +3,7 @@ import { useLoader, useFrame } from '@react-three/fiber'
 import { useSpring, animated } from '@react-spring/three'
 import * as THREE from "three";
 
-obstacles = []
+var obstacles = []
 
 export function Obstacle(){
 
