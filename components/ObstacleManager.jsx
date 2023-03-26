@@ -11,10 +11,9 @@ function delay(milliseconds){
 
 var lastObstacleSentTime = 0
 
-function Obstacle({ startingSize, delay, randomDelayRange }) {
+export function Obstacle({ startingSize, delay, randomDelayRange, obstacleRef }) {
     const { viewport } = useThree();
     const texture = useLoader(THREE.TextureLoader, '/Images/GameObstacle.png');
-    const obstacleRef = useRef()
 
     var startTime = Date.now() + delay
     var speed = 0.03
@@ -36,20 +35,8 @@ function Obstacle({ startingSize, delay, randomDelayRange }) {
 
     return (
       <mesh position={[4, -1.4, 1]} ref={obstacleRef}>
-        <planeBufferGeometry args={startingSize} />
+        <planeGeometry args={startingSize} />
         <meshBasicMaterial map={texture} transparent={true} />
       </mesh>
-    )
-}
-
-
-export function ObstacleManager() {
-    const { viewport } = useThree();
-    return (
-        <group>
-            <Obstacle delay={2000} randomDelayRange={[0, 1000]} startingSize={[0.8, 1, 1]} />
-            <Obstacle delay={7000} randomDelayRange={[0, 1000]} startingSize={[0.8, 1, 1]} />
-            <Obstacle delay={9500} randomDelayRange={[0, 1000]} startingSize={[0.8, 1, 1]} />
-        </group>
     )
 }

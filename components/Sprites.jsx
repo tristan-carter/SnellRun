@@ -34,8 +34,7 @@ function delay(milliseconds){
     });
 }
 
-export function TomSprite() {
-  const spriteRef = useRef(null);
+export function TomSprite({ spriteRef }) {
   const [jumping, setJumping] = useState(false);
 
   const springs = useSpring({
