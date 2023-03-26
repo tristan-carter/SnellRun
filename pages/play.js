@@ -25,10 +25,10 @@ function Background({ image }) {
 
 function checkCollision(sprite, obstacle) {
   return (
-    sprite.position.x < obstacle.position.x + 0.7 &&
-    sprite.position.x + 0.8 > obstacle.position.x &&
-    sprite.position.y < obstacle.position.y + 1 &&
-    1.9 + sprite.position.y > obstacle.position.y
+    sprite.position.x < obstacle.position.x + 0.35 &&
+    sprite.position.x + 0.35 > obstacle.position.x &&
+    sprite.position.y < obstacle.position.y + 0.9 &&
+    0.9 + sprite.position.y > obstacle.position.y
   );
 }
 
