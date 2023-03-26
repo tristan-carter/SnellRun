@@ -16,15 +16,15 @@ export function Obstacle({ startingSize, delay, randomDelayRange, obstacleRef })
     const texture = useLoader(THREE.TextureLoader, '/Images/GameObstacle.png');
 
     var startTime = Date.now() + delay
-    var speed = viewport.width/250
+    var speed = 4.5
 
-    useFrame(() => {
+    useFrame((_, delta) => {
         const currentTime = Date.now()
         if (currentTime >= startTime && (currentTime >= lastObstacleSentTime + 3000 || obstacleRef.current.position.x > -4)) {
             if (obstacleRef.current.position.x == 4) {
                 lastObstacleSentTime = Date.now()
             }
-            obstacleRef.current.position.x -= speed
+            obstacleRef.current.position.x -= speed * delta
             if (obstacleRef.current.position.x < -4) {
                 obstacleRef.current.position.x = 4
                 const newDelay = Math.floor(Math.random() * randomDelayRange[1]) + randomDelayRange[0];
