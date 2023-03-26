@@ -6,9 +6,6 @@ import React from 'react'
 import { Canvas, useLoader, KeyboardControls } from '@react-three/fiber'
 import * as THREE from "three";
 
-import UIfx from 'uifx';
-import mp3File from './my-sounds/beep.mp3';
-
 import NavBar from '/components/navbar'
 
 export default function Retry () {
