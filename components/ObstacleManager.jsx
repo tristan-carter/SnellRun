@@ -16,7 +16,7 @@ export function Obstacle({ startingSize, delay, randomDelayRange, obstacleRef })
     const texture = useLoader(THREE.TextureLoader, '/Images/GameObstacle.png');
 
     var startTime = Date.now() + delay
-    var speed = 0.03
+    var speed = viewport.width/250
 
     useFrame(() => {
         const currentTime = Date.now()
