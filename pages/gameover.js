@@ -31,7 +31,7 @@ export default function Retry () {
                     />
                 </div>
 
-                <p className="z-[2] self-center mt-[70%] md:mt-[14%] font-bold text-[#E50000] text-9xl">Late!!</p>
+                <p className="z-[2] self-center mt-[70%] md:mt-[14%] font-bold text-[#FF5050] text-9xl">Late!!</p>
                 <Link passHref className="z-[2] w-70 md:mb-0 md:mt-36 lg:w-70 p-2 md:p-3 lg:p-4 font-semibold text-white hover:bg-[#55748F] bg-themeBlue rounded-2xl md:rounded-3xl text-center text-6xl md:text-7xl lg:text-8xl" href="/play">
                     <button>Retry</button>
                 </Link>
