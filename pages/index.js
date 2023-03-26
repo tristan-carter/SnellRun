@@ -18,6 +18,7 @@ export default function Home () {
               alt="Background Image"
               fill
               className="-z-10 object-contain"
+              priority={true}
           />
         </div>
         <div className="absolute h-full w-screen z-[1] md:hidden">
@@ -26,6 +27,7 @@ export default function Home () {
               alt="Background Image"
               fill
               className="-z-10 object-contain"
+              priority={true}
           />
         </div>
         <p className="md:hidden z-[2] mt-[20%] font-bold text-white text-7xl">SnellRun</p>

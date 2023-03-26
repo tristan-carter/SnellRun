@@ -11,6 +11,7 @@ export default function NavBar() {
                     alt="Clifton Logo"
                     width={64}
                     height={64}
+                    priority={true}
                 />
             </div>
 
@@ -21,6 +22,7 @@ export default function NavBar() {
                     alt="Back Button"
                     width={64}
                     height={64}
+                    priority={true}
                 />
             </Link>
         </div>
