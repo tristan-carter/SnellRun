@@ -58,19 +58,19 @@ export function ObstacleManager({ref1, ref2, ref3}) {
             if (ref1Anchored.current) {
                 ref1.current.position.x = 4
                 lastSentTimeRef.current = currentTime
-                waitTimeRef.current = Math.floor(Math.random() * 1200)+800;
+                waitTimeRef.current = Math.floor(Math.random() * 800)+600;
                 
                 ref1Anchored.current = false
             } else if (ref2Anchored.current) {
                 ref2.current.position.x = 4
                 lastSentTimeRef.current = currentTime
-                waitTimeRef.current = Math.floor(Math.random() * 1200)+800;
+                waitTimeRef.current = Math.floor(Math.random() * 800)+600;
 
                 ref2Anchored.current = false
             } else if (ref3Anchored.current) {
                 ref3.current.position.x = 4
                 lastSentTimeRef.current = currentTime
-                waitTimeRef.current = Math.floor(Math.random() * 1200)+800;
+                waitTimeRef.current = Math.floor(Math.random() * 800)+600;
 
                 ref3Anchored.current = false
             }
