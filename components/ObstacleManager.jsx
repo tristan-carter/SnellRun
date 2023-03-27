@@ -60,13 +60,13 @@ export function ObstacleManager({ref1, ref2, ref3}) {
             const minDelay = 600
             const possibleExtraDelay = 800
 
-            if (currentTime-startTime>30000) {
+            if (currentTime-startTime>60000) {
                 minDelay = 400
                 possibleExtraDelay = 500
-            } else if (currentTime-startTime>20000) {
+            } else if (currentTime-startTime>45000) {
                 minDelay = 500
                 possibleExtraDelay = 500
-            } else if (currentTime-startTime>10000) {
+            } else if (currentTime-startTime>30000) {
                 minDelay = 500
                 possibleExtraDelay = 600
             }
