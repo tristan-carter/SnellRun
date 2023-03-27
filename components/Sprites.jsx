@@ -38,8 +38,8 @@ export function TomSprite({ spriteRef }) {
   const [jumping, setJumping] = useState(false);
 
   const springs = useSpring({
-    position: jumping ? [-0.8, 1.0, 1] : [-0.8, -0.6, 1],
-    config: { tension: 120, friction: 14, duration: 350 }
+    position: jumping ? [-0.9, 1.0, 1] : [-0.9, -0.6, 1],
+    config: { tension: 120, friction: 14, duration: 300 }
   })
 
   const texture = useLoader(THREE.TextureLoader, '/Images/TomSpriteSet.png')
@@ -57,7 +57,7 @@ export function TomSprite({ spriteRef }) {
         window.removeEventListener("click", jumpPressed)
         window.dispatchEvent(startJumpingEvent)
         setJumping(true)
-        await delay(350)
+        await delay(400)
         setJumping(false)
       }
     }
@@ -79,7 +79,7 @@ export function SnellSprite() {
 
   const springs = useSpring({
     position: jumping ? [-1.7, 1.0, 1] : [-1.7, -0.6, 1],
-    config: { tension: 120, friction: 14, duration: 350 }
+    config: { tension: 120, friction: 14, duration: 300 }
   })
 
   const texture = useLoader(THREE.TextureLoader, '/Images/SnellSpriteSet.png')
@@ -91,7 +91,7 @@ export function SnellSprite() {
   async function jumpPressed(){
     await delay(150)
     setJumping(true)
-    await delay(350)
+    await delay(400)
     setJumping(false)
   }
 

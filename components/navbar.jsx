@@ -16,6 +16,7 @@ export default function NavBar() {
             </div>
 
             <p className="md:self-center text-themeOrange text-6xl md:text-7xl font-semibold">SnellRun</p>
+            
             <Link className="relative" href="/">
                 <Image
                     src="/Images/NavExitButton.png"
