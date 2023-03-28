@@ -11,16 +11,16 @@ import NavBar from '/components/navbar'
 const LeaderboardStats = [
     { position: "4", name: "Roman Z", score: "831" },
     { position: "5", name: "Tristan C", score: "743" },
-    { position: "6", name: "Roman Z", score: "831" },
-    { position: "7", name: "Tristan C", score: "743" },
-    { position: "8", name: "Mitch M", score: "503" },
+    { position: "6", name: "Mitch M", score: "503" },
+    { position: "7", name: "?", score: "..." },
+    { position: "8", name: "?", score: "..." },
     { position: "9", name: "?", score: "..." },
     { position: "10", name: "?", score: "..." },
     { position: "11", name: "?", score: "..." },
     { position: "12", name: "?", score: "..." },
     { position: "13", name: "?", score: "..." },
     { position: "14", name: "?", score: "..." },
-    { position: "15", name: "?", score: "..." }
+    { position: "15", name: "?", score: "..." },
 ]
 
 export default function Leaderboard () {
