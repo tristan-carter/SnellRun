@@ -9,10 +9,10 @@ import * as THREE from "three";
 import NavBar from '/components/navbar'
 
 const LeaderboardStats = [
-    { position: "4", name: "Olly S", score: "1056" },
-    { position: "5", name: "Tristan C", score: "743" },
-    { position: "6", name: "Mitch M", score: "503" },
-    { position: "7", name: "?", score: "..." },
+    { position: "4", name: "Josh P", score: "1363" },
+    { position: "5", name: "Olly S", score: "1056" },
+    { position: "6", name: "Tristan C", score: "743" },
+    { position: "7", name: "Mitch M", score: "503" },
     { position: "8", name: "?", score: "..." },
     { position: "9", name: "?", score: "..." },
     { position: "10", name: "?", score: "..." },
@@ -44,7 +44,7 @@ export default function Leaderboard () {
                         2nd - Conor H :  2252 points
                     </li>
                     <li className="m-0.5 text-[#cd7f32] text-3xl md:text-4xl font-bold text-center">
-                        3rd - Josh P :  1363 points
+                        3rd - Adam L :  1611 points
                     </li>
                     {LeaderboardStats.map(User => <li className="m-0.5 text-white text-2xl md:text-3xl font-semibold text-center">
                         {User["position"]}th - {User["name"]} : {User["score"]} points
