@@ -62,12 +62,15 @@ export function ObstacleManager({ref1, ref2, ref3}) {
             if (currentTime-startTime>60000) {
                 minDelay.current = 400
                 possibleExtraDelay.current = 500
+                speedRef.current=7
             } else if (currentTime-startTime>45000) {
                 minDelay.current = 500
                 possibleExtraDelay.current = 500
+                speedRef.current=6
             } else if (currentTime-startTime>30000) {
                 minDelay.current = 500
                 possibleExtraDelay.current = 600
+                speedRef.current=5
             }
 
             if (ref1Anchored.current) {
