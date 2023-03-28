@@ -9,7 +9,7 @@ import * as THREE from "three";
 import NavBar from '/components/navbar'
 
 const LeaderboardStats = [
-    { position: "4", name: "Roman Z", score: "831" },
+    { position: "4", name: "Olly S", score: "1056" },
     { position: "5", name: "Tristan C", score: "743" },
     { position: "6", name: "Mitch M", score: "503" },
     { position: "7", name: "?", score: "..." },
@@ -38,13 +38,13 @@ export default function Leaderboard () {
                 <p className="mt-4 font-bold text-[#D6973A] text-4xl md:text-7xl">🏆Leaderboard🏆</p>
                 <ul className="mt-4" >
                     <li className="m-0.5 text-[#b8860b] text-3xl md:text-4xl font-bold text-center">
-                        1st - Conor H :  2252 points
+                        1st - Roman Z :  3056 points
                     </li>
                     <li className="m-0.5 text-[#c0c0c0] text-3xl md:text-4xl font-bold text-center">
-                        2nd - Josh P :  1363 points
+                        2nd - Conor H :  2252 points
                     </li>
                     <li className="m-0.5 text-[#cd7f32] text-3xl md:text-4xl font-bold text-center">
-                        3rd - Olly S :  1054 points
+                        3rd - Josh P :  1363 points
                     </li>
                     {LeaderboardStats.map(User => <li className="m-0.5 text-white text-2xl md:text-3xl font-semibold text-center">
                         {User["position"]}th - {User["name"]} : {User["score"]} points
