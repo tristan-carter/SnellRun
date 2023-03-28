@@ -57,7 +57,7 @@ export function TomSprite({ spriteRef }) {
         window.removeEventListener("click", jumpPressed)
         window.dispatchEvent(startJumpingEvent)
         setJumping(true)
-        await delay(400)
+        await delay(300)
         setJumping(false)
       }
     }
@@ -91,7 +91,7 @@ export function SnellSprite() {
   async function jumpPressed(){
     await delay(150)
     setJumping(true)
-    await delay(400)
+    await delay(300)
     setJumping(false)
   }
 

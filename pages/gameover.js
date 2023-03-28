@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useRouter } from 'next/router';
 
 import React from 'react'
 import { Canvas, useLoader, KeyboardControls } from '@react-three/fiber'
@@ -9,6 +10,8 @@ import * as THREE from "three";
 import NavBar from '/components/navbar'
 
 export default function Retry () {
+    const { query } = useRouter();
+    const score = query.score;
     return (
         <>
             <Head>
@@ -31,8 +34,9 @@ export default function Retry () {
                     />
                 </div>
 
-                <p className="z-[2] self-center mt-[70%] md:mt-[14%] font-bold text-[#FF5050] text-9xl">Late!!</p>
-                <Link passHref className="z-[2] w-70 md:mb-0 md:mt-36 lg:w-70 p-2 md:p-3 lg:p-4 font-semibold text-white hover:bg-[#55748F] bg-themeBlue rounded-2xl md:rounded-3xl text-center text-6xl md:text-7xl lg:text-8xl" href="/play">
+                <p className="z-[3] mt-3  font-bold text-white text-6xl">{score} points</p>
+                <p className="z-[2] self-center mt-40 md:mt-5 lg:mt-40 font-bold text-[#FF5050] text-9xl">Late!!</p>
+                <Link passHref className="z-[2] w-70 md:mb-0 lg:mt-32 p-2 md:p-3 lg:p-3 font-semibold text-white hover:bg-[#55748F] bg-themeBlue rounded-2xl md:rounded-3xl text-center text-6xl md:text-7xl lg:text-8xl" href="/play">
                     <button>Retry</button>
                 </Link>
             </main>

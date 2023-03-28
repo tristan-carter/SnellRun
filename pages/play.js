@@ -55,7 +55,10 @@ function Game () {
     || checkCollision(spriteRef.current, obstacleRef2.current) 
     || checkCollision(spriteRef.current, obstacleRef3.current)) {
       // collided with an obstacle so takes you to the game over page
-      router.push('/gameover')
+      router.push({
+        pathname: '/gameover',
+        query: {score},
+    })
     }
   });
   return (

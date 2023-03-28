@@ -34,7 +34,7 @@ export default function Home () {
         <Link passHref className="z-[2] w-60 mb-[-75%] md:mb-0 md:mt-36 lg:w-60 p-2 md:p-3 lg:p-4 font-semibold text-[#860C0C] md:text-themeBlue hover:bg-[#D6973A] bg-themeOrange rounded-2xl md:rounded-3xl text-center text-6xl md:text-7xl lg:text-8xl" href="/play">
           <button>Play</button>
         </Link>
-        <Link passHref className="z-[2] w-60 mb-[15%] md:mb-0 md:mt-10 lg:w-64 p-2 md:p-3 lg:p-4 font-semibold text-[#07223C] hover:bg-[#295983] bg-[#55748F] rounded-2xl md:rounded-3xl text-center text-6xl md:text-7xl lg:text-8xl" href="/">
+        <Link passHref className="z-[2] w-60 mb-[15%] md:mb-0 md:mt-10 lg:w-64 p-2 md:p-3 lg:p-4 font-semibold text-[#07223C] hover:bg-[#295983] bg-[#55748F] rounded-2xl md:rounded-3xl text-center text-6xl md:text-7xl lg:text-8xl" href="/leaderboard">
           <button>Stats</button>
         </Link>
       </main>

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function NavBar() {
     return(
-        <div className="p-4 justify-between items-center flex flex-row h-[4.5rem] relative w-full z-50">
+        <div className="p-4 justify-between items-center flex flex-row h-[4.5rem] md:h-13 lg:h-[4.5rem] relative w-full z-50">
             <div className="relative">
                 <Image
                     src="/Images/HeaderIcon.png"
