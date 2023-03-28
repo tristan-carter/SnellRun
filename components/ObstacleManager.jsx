@@ -60,13 +60,13 @@ export function ObstacleManager({ref1, ref2, ref3}) {
         if (lastSentTimeRef.current+waitTimeRef.current < currentTime) {
 
             if (currentTime-startTime>60000) {
-                minDelay = 400
+                minDelay.current = 400
                 possibleExtraDelay.current = 500
             } else if (currentTime-startTime>45000) {
-                minDelay = 500
+                minDelay.current = 500
                 possibleExtraDelay.current = 500
             } else if (currentTime-startTime>30000) {
-                minDelay = 500
+                minDelay.current = 500
                 possibleExtraDelay.current = 600
             }
 
