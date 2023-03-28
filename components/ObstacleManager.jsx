@@ -48,9 +48,9 @@ export function ObstacleManager({ref1, ref2, ref3}) {
             }
         }
         if (!ref3Anchored.current) {
-            ref2.current.position.x -= speedRef.current * delta
-            if (ref2.current.position.x < -4) {
-                ref2.current.position.x = 4
+            ref3.current.position.x -= speedRef.current * delta
+            if (ref3.current.position.x < -4) {
+                ref3.current.position.x = 4
                 ref3Anchored.current = true
             }
         }
