@@ -90,13 +90,7 @@ export default function Play () {
       </Head>
       <main className="flex flex-col justify-center items-center h-full bg-themeBlue">
         <NavBar/>
-        <ReactPlayer
-            url="/Music/background.mp3"
-            playing
-            loop
-            volume={1}
-            style={{ display: 'none' }}
-        />
+        <audio src="/Music/background.mp3" autoPlay loop />
         <Canvas className='bg-[#41BFA7] z-[2]'>
           <Game/>
         </Canvas>
