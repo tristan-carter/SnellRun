@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useRouter } from 'next/router';
 
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Canvas, useLoader, KeyboardControls } from '@react-three/fiber'
 import * as THREE from "three";
 
@@ -11,9 +11,21 @@ import NavBar from '/components/navbar'
 
 export default function Retry () {
     const { query } = useRouter();
-    const router = useRouter();
     const score = query.score;
-    router.events.on("hashChangeStart", ()=>{router.push('/')});
+    const router = useRouter();
+
+    useEffect(() => {
+        function handleHashChange() {
+            router.push('/')
+        }
+
+        window.addEventListener('hashchange', handleHashChange);
+
+        return () => {
+        window.removeEventListener('hashchange', handleHashChange);
+        };
+    }, []);
+
     return (
         <>
             <Head>
