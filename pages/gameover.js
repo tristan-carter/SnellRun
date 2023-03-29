@@ -12,19 +12,6 @@ import NavBar from '/components/navbar'
 export default function Retry () {
     const { query } = useRouter();
     const score = query.score;
-    const router = useRouter();
-
-    useEffect(() => {
-        function handleHashChange() {
-            router.push('/')
-        }
-
-        window.addEventListener('hashchange', handleHashChange);
-
-        return () => {
-        window.removeEventListener('hashchange', handleHashChange);
-        };
-    }, []);
 
     return (
         <>
