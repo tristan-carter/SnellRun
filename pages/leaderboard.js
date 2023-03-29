@@ -9,18 +9,17 @@ import * as THREE from "three";
 import NavBar from '/components/navbar'
 
 const LeaderboardStats = [
-    { position: "4", name: "Tom G", score: "1943" },
-    { position: "5", name: "Max P", score: "1470" },
-    { position: "6", name: "Josh P", score: "1363" },
-    { position: "7", name: "Olly S", score: "1056" },
-    { position: "8", name: "Mitch M", score: "972" },
-    { position: "9", name: "Madison H", score: "863" },
-    { position: "10", name: "Tristan C", score: "743" },
-    { position: "11", name: "Sebastian L", score: "497" },
-    { position: "12", name: "Elizabeth W", score: "401" },
-    { position: "13", name: "Gabriel D", score: "348" },
-    { position: "14", name: "?", score: "..." },
-    { position: "15", name: "?", score: "..." },
+    { position: "4", name: "Ed L", score: "2224" },
+    { position: "5", name: "Charile B", score: "2046" },
+    { position: "6", name: "Tom G", score: "1943" },
+    { position: "7", name: "Oliver C", score: "1791" },
+    { position: "8", name: "Max P", score: "1470" },
+    { position: "9", name: "Josh P", score: "1363" },
+    { position: "10", name: "Olly S", score: "1056" },
+    { position: "11", name: "Mitch M", score: "972" },
+    { position: "12", name: "Abelard R", score: "931" },
+    { position: "13", name: "Fraser G", score: "909" },
+    { position: "14", name: "Madison H", score: "863" },
 ]
 
 export default function Leaderboard () {

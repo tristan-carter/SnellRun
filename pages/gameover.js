@@ -11,7 +11,9 @@ import NavBar from '/components/navbar'
 
 export default function Retry () {
     const { query } = useRouter();
+    const router = useRouter();
     const score = query.score;
+    router.events.on("hashChangeStart", ()=>{router.push('/')});
     return (
         <>
             <Head>
