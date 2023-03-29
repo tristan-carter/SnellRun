@@ -37,20 +37,20 @@ export default function Leaderboard () {
                 <NavBar/>
                 <p className="mt-4 font-bold text-[#D6973A] text-4xl md:text-7xl">🏆Leaderboard🏆</p>
                 <ul className="mt-4" >
-                    <li className="m-0.5 text-[#b8860b] text-3xl md:text-4xl font-bold text-center">
+                    <li className="m-0.2 text-[#b8860b] text-3xl md:text-4xl font-bold text-center">
                         1st - Adam L :  5671 points
                     </li>
-                    <li className="m-0.5 text-[#c0c0c0] text-3xl md:text-4xl font-bold text-center">
+                    <li className="m-0.2 text-[#c0c0c0] text-3xl md:text-4xl font-bold text-center">
                         2nd - Roman Z :  3056 points
                     </li>
-                    <li className="m-0.5 text-[#cd7f32] text-3xl md:text-4xl font-bold text-center">
+                    <li className="m-0.2 text-[#cd7f32] text-3xl md:text-4xl font-bold text-center">
                         3rd - Conor H :  2252 points
                     </li>
-                    {LeaderboardStats.map(User => <li className="m-0.5 text-white text-2xl md:text-3xl font-semibold text-center">
+                    {LeaderboardStats.map(User => <li className="m-0.2 text-white text-2xl md:text-3xl font-semibold text-center">
                         {User["position"]}th - {User["name"]} : {User["score"]} points
                         </li>)}
                 </ul>
-                <p className="mt-5 text-[#07223C] text-xl text-center" >(Direct message TrisCart on Teams with a screenshot of your score to be added!)</p>
+                <p className="mt-1 text-[#07223C] text-lg text-center" >(Direct message TrisCart on Teams with a screenshot of your score to be added!)</p>
             </main>
         </>
     );
