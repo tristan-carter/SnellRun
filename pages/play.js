@@ -48,6 +48,12 @@ function Game () {
   const clockRef = useRef(new Clock())
 
   useFrame((clock) => {
+    if (!document.hasFocus()) {
+      router.push({
+        pathname: '/gameover',
+        query: {score},
+      })
+    }
     const elapsedTime = clockRef.current.getElapsedTime()
     const newTime = Math.round(elapsedTime * 10)
     if (score < newTime) { setScore(newTime) }
