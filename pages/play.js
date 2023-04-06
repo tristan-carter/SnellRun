@@ -6,7 +6,6 @@ import { Canvas, useLoader, useFrame } from '@react-three/fiber'
 import { Text } from '@react-three/drei'
 import * as THREE from "three";
 import { Clock } from 'three'
-import ReactPlayer from 'react-player';
 
 import NavBar from '/components/navbar'
 import { TomSprite } from '/components/Sprites';
@@ -96,7 +95,6 @@ export default function Play () {
       </Head>
       <main className="flex flex-col justify-center items-center h-full bg-themeBlue">
         <NavBar/>
-        <audio src="/Music/background.mp3" autoPlay loop />
         <Canvas className='bg-[#41BFA7] z-[2]'>
           <Game/>
         </Canvas>
