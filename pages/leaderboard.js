@@ -16,10 +16,10 @@ const LeaderboardStats = [
     { position: "8", name: "Oliver C", score: "1791" },
     { position: "9", name: "Char T", score: "1741" },
     { position: "10", name: "Max P", score: "1470" },
-    { position: "11", name: "Josh P", score: "1363" },
-    { position: "12", name: "Olly S", score: "1056" },
-    { position: "13", name: "Will C", score: "1011" },
-    { position: "14", name: "Mitch M", score: "972" },
+    { position: "11", name: "Erik G", score: "1395" },
+    { position: "12", name: "Josh P", score: "1363" },
+    { position: "13", name: "Olly S", score: "1056" },
+    { position: "14", name: "Will C", score: "1011" },
 ]
 
 export default function Leaderboard () {
