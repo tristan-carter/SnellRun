@@ -1,1 +1,1 @@
-A 2d game in the style of google dinausor. Developed to work smoothly on both desktop and mobile using Next.js and react-three-fiber. Winner of school STEM competition and played by 1500+ users.
+Custom 2d endless runner game played by over 1500 students more than 4000 times built in just over a week alongside school.
